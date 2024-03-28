@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/jobs.css'%}">
+ <style>
+        .container{
+    margin-top: 200px;
+    text-align: center;
+}
+.container.jumbotron{
+    background: red;
+    color: white;
+}
+.jumbotron a{
+    background: yellow;
+    color: red;
+    border: 2px solid green;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Welcome to Sai Jobs!!!</h1>
+            <p>Continuous Job Updates for Every Hour...!!</p>
+            <a class="btn btn-primary btn-lg" href="hydjobsinfo/">Hyderabad Jobs</a>&nbsp&nbsp&nbsp&nbsp
+            <a class="btn btn-primary btn-lg" href="bngjobsinfo/">Bangolore Jobs</a>&nbsp&nbsp&nbsp&nbsp
+            <a class="btn btn-primary btn-lg" href="punejobsinfo/">Pune Jobs</a>
+        </div>
+    </div>
+</body>
+</html>
